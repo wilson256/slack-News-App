@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/submit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="222dp"
+        android:id="@+id/linearLayout2"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:src="@drawable/zuri"
+        />
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="21dp"
+            android:text="Fill in slack personal information" />
+
+
+    <EditText
+            android:id="@+id/nameinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView2"
+            android:hint="name(wilson)"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/emailinput"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/nameinput"
+            android:hint="wilsonnsubuga621@gmail.com"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/sumitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/emailinput"
+            android:layout_marginBottom="250dp"
+            android:layout_centerHorizontal="true"
+            android:text="SUBMIT" />
+
+</RelativeLayout>
